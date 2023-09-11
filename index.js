@@ -23,7 +23,7 @@ const bankAccount = {
     }
   },
 
-  withdraw: function (amount) {
+  withdraw(amount) {
     if (amount > 4 && amount <= this.balance) {
       this.balance -= amount;
       document.getElementById("balance").textContent = this.balance;
